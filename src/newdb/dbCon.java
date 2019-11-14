@@ -70,7 +70,7 @@ public class dbCon {
                                 String name = sqls.getString("studentName");
                                 int age = sqls.getInt("age");
                                 double gpa = sqls.getDouble("gpa");
-                                System.out.println(id + " " + name + " " + age + " " + gpa);
+                                System.out.println("Student ID:" + id + " Student Name:" + name + " Student Age:" + age + " Student GPA:" + gpa);
                         }
 
                         sqls.close();
@@ -80,7 +80,7 @@ public class dbCon {
                         throw (e);
                 }
     }
-
+    
         public static void main (String args[]) throws Exception {
         
             dbCon a = new dbCon();
