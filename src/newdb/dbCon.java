@@ -67,8 +67,10 @@ public class dbCon {
                         while (sqls.next()) {
                                  
                                 int id = sqls.getInt("idStudents");
-                                String data = sqls.getString("studentName");
-                                System.out.println(id + " " + data);
+                                String name = sqls.getString("studentName");
+                                int age = sqls.getInt("age");
+                                double gpa = sqls.getDouble("gpa");
+                                System.out.println(id + " " + name + " " + age + " " + gpa);
                         }
 
                         sqls.close();
